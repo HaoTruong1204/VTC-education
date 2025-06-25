@@ -4,10 +4,16 @@
   padding: 0;
 }
 
+:root {
+  --main-color: #3498db;
+  --dark-color: #2c3e50;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -17,13 +23,16 @@ body {
 }
 
 header {
-  background: #2c3e50;
+  background: var(--dark-color);
   color: #fff;
   padding: 1rem 0;
 }
 
-header h1 {
+.brand {
   font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
 }
 
 .header-content {
@@ -34,7 +43,7 @@ header h1 {
 
 .nav-toggle {
   display: none;
-  background: #1a242f;
+  background: var(--dark-color);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -45,6 +54,7 @@ header h1 {
 nav {
   margin-top: 0.5rem;
 }
+
 
 .nav a {
   color: #fff;
@@ -57,20 +67,39 @@ nav {
 }
 
 .hero {
-  background: linear-gradient(135deg, #3498db, #9b59b6);
+  position: relative;
+  background: url('https://source.unsplash.com/random/1200x600?landscape') center/cover no-repeat;
   color: #fff;
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background: #2c3e50;
+  background: var(--dark-color);
   color: #fff;
   border-radius: 0.25rem;
   text-decoration: none;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
@@ -93,9 +122,9 @@ nav {
 }
 
 .gallery-item {
-  background: #ddd;
-  height: 150px;
+  width: 100%;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .testimonials {
@@ -122,6 +151,11 @@ nav {
   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
+}
+
+.feature i {
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
 }
 
 .about {
@@ -170,6 +204,24 @@ footer {
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-top.show {
+  display: block;
 }
 
 @media (max-width: 768px) {

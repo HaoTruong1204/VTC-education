@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern responsive interface">
   <title>My Awesome Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="container header-content">
-      <h1>Welcome to My Frontend</h1>
-      <button id="navToggle" class="nav-toggle">Menu</button>
+      <a href="#" class="brand">MySite</a>
+      <button id="navToggle" class="nav-toggle"><i class="fa fa-bars"></i></button>
       <nav id="mainNav" class="nav">
         <a href="#hero">Home</a>
         <a href="#features">Features</a>
@@ -23,9 +28,9 @@
   </header>
 
   <section id="hero" class="hero">
-    <div class="container">
-      <h2>Hero Section</h2>
-      <p>Build an awesome interface with style and responsiveness.</p>
+    <div class="container hero-content">
+      <h2>Build Stunning Experiences</h2>
+      <p>Crafted with care and modern best practices.</p>
       <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </section>
@@ -35,14 +40,17 @@
       <h2>Features</h2>
       <div class="grid">
         <div class="feature">
+          <i class="fa fa-bolt fa-2x"></i>
           <h3>Fast</h3>
           <p>Quick load times for better user experience.</p>
         </div>
         <div class="feature">
+          <i class="fa fa-mobile-screen-button fa-2x"></i>
           <h3>Responsive</h3>
           <p>Looks great on all devices, from phone to desktop.</p>
         </div>
         <div class="feature">
+          <i class="fa fa-leaf fa-2x"></i>
           <h3>Modern</h3>
           <p>Built with modern best practices and clean design.</p>
         </div>
@@ -54,10 +62,10 @@
     <div class="container">
       <h2>Gallery</h2>
       <div class="grid gallery-grid">
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
+        <img class="gallery-item" src="https://source.unsplash.com/random/300x200?nature" alt="Random nature">
+        <img class="gallery-item" src="https://source.unsplash.com/random/300x201?city" alt="Random city">
+        <img class="gallery-item" src="https://source.unsplash.com/random/300x202?tech" alt="Random tech">
+        <img class="gallery-item" src="https://source.unsplash.com/random/300x203?abstract" alt="Random abstract">
       </div>
     </div>
   </section>
@@ -106,6 +114,10 @@
       <p>&copy; 2024 My Awesome Site. All rights reserved.</p>
     </div>
   </footer>
+
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>
