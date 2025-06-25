@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern responsive interface">
+  <title>My Awesome Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <a href="#" class="brand">MySite</a>
+      <button id="navToggle" class="nav-toggle"><i class="fa fa-bars"></i></button>
+      <nav id="mainNav" class="nav">
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <h2>Build Stunning Experiences</h2>
+      <p>Crafted with care and modern best practices.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="grid">
+        <div class="feature">
+          <i class="fa fa-bolt fa-2x"></i>
+          <h3>Fast</h3>
+          <p>Quick load times for better user experience.</p>
+        </div>
+        <div class="feature">
+          <i class="fa fa-mobile-screen-button fa-2x"></i>
+          <h3>Responsive</h3>
+          <p>Looks great on all devices, from phone to desktop.</p>
+        </div>
+        <div class="feature">
+          <i class="fa fa-leaf fa-2x"></i>
+          <h3>Modern</h3>
+          <p>Built with modern best practices and clean design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="grid gallery-grid">
+        <img class="gallery-item" src="https://source.unsplash.com/random/300x200?nature" alt="Random nature">
+        <img class="gallery-item" src="https://source.unsplash.com/random/300x201?city" alt="Random city">
+        <img class="gallery-item" src="https://source.unsplash.com/random/300x202?tech" alt="Random tech">
+        <img class="gallery-item" src="https://source.unsplash.com/random/300x203?abstract" alt="Random abstract">
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <blockquote>
+        <p>"This interface is just amazing!"</p>
+        <cite>- Jane Doe</cite>
+      </blockquote>
+      <blockquote>
+        <p>"I love using this site every day."</p>
+        <cite>- John Smith</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>This is a demo of a simple yet elegant frontend interface.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My Awesome Site. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
